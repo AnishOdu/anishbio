@@ -2,186 +2,151 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Anish O | Tech Lead Portfolio</title>
+    <title>Anish O | Deputy Manager | Tech Lead</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- Bootstrap 5 -->
+    <!-- Bootstrap 5 CDN -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- FontAwesome -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
 
     <style>
         body {
-            scroll-behavior: smooth;
-        }
-        .hero {
-            background: linear-gradient(135deg, #0d6efd, #0a58ca);
-            color: white;
-            padding: 100px 0;
-        }
-        .section-padding {
-            padding: 70px 0;
+            background-color: #f8f9fa;
         }
         .section-title {
-            margin-bottom: 40px;
-            font-weight: 700;
+            border-bottom: 2px solid #0d6efd;
+            padding-bottom: 5px;
+            margin-bottom: 15px;
         }
-        .skill-badge {
-            margin: 5px;
+        .badge-skill {
+            margin: 4px 4px 4px 0;
         }
-        .project-card {
-            transition: transform 0.3s ease;
+        .card {
+            border: none;
+            border-radius: 12px;
         }
-        .project-card:hover {
-            transform: translateY(-5px);
-        }
-        footer {
-            background: #212529;
-            color: #ccc;
-            padding: 20px 0;
+        .shadow-custom {
+            box-shadow: 0 4px 20px rgba(0,0,0,0.05);
         }
     </style>
 </head>
 <body>
 
-<!-- Navbar -->
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-    <div class="container">
-        <a class="navbar-brand fw-bold" href="#">Anish O</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navMenu">
-            <ul class="navbar-nav ms-auto">
-                <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-                <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
-                <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
-                <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
-                <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-            </ul>
+<div class="container my-5">
+
+    <!-- Header -->
+    <div class="card shadow-custom p-4 mb-4">
+        <div class="row align-items-center">
+            <div class="col-md-8">
+                <h1 class="fw-bold mb-0">ANISH O</h1>
+                <h5 class="text-primary">Deputy Manager | Tech Lead</h5>
+            </div>
+            <div class="col-md-4 text-md-end mt-3 mt-md-0">
+                <p class="mb-1"><strong>Email:</strong> oanish76@gmail.com</p>
+                <p class="mb-1"><strong>Mobile:</strong> +91 8310821922 / 9108672029</p>
+                <p class="mb-0"><strong>Location:</strong> India</p>
+            </div>
         </div>
     </div>
-</nav>
 
-<!-- Hero Section -->
-<section class="hero text-center">
-    <div class="container">
-        <h1 class="display-4 fw-bold">Deputy Manager | Tech Lead</h1>
-        <p class="lead">19+ Years of Experience in Enterprise Application Development & Cloud Solutions</p>
-        <a href="#contact" class="btn btn-light btn-lg mt-3">Get In Touch</a>
-    </div>
-</section>
-
-<!-- About -->
-<section id="about" class="section-padding">
-    <div class="container">
-        <h2 class="text-center section-title">About Me</h2>
-        <p class="text-center col-md-10 mx-auto">
-            Highly experienced and results-driven software professional specializing in Java/J2EE technologies,
-            Spring Boot, AWS cloud migration, Agile project leadership, and enterprise architecture.
-            Currently leading 25+ engineers at Renault & Nissan Technology Business Center India,
-            delivering scalable and high-performance applications.
+    <!-- Profile Summary -->
+    <div class="card shadow-custom p-4 mb-4">
+        <h4 class="section-title">Profile Summary</h4>
+        <p>
+            Highly experienced and results-driven professional with nearly 19 years of experience in software engineering 
+            and project oversight. Expertise in Java/J2EE technologies, Agile methodologies, AWS cloud migration, 
+            and leading cross-functional teams to deliver scalable enterprise solutions.
         </p>
     </div>
-</section>
 
-<!-- Skills -->
-<section id="skills" class="bg-light section-padding">
-    <div class="container">
-        <h2 class="text-center section-title">Technical Skills</h2>
-        <div class="text-center">
-            <span class="badge bg-primary skill-badge">Java 11/17</span>
-            <span class="badge bg-primary skill-badge">Spring Boot</span>
-            <span class="badge bg-primary skill-badge">Hibernate</span>
-            <span class="badge bg-primary skill-badge">AngularJS</span>
-            <span class="badge bg-primary skill-badge">AWS</span>
-            <span class="badge bg-primary skill-badge">Oracle</span>
-            <span class="badge bg-primary skill-badge">PostgreSQL</span>
-            <span class="badge bg-primary skill-badge">JBoss</span>
-            <span class="badge bg-primary skill-badge">Agile & Scrum</span>
-            <span class="badge bg-primary skill-badge">DevOps</span>
-        </div>
-    </div>
-</section>
-
-<!-- Experience -->
-<section id="experience" class="section-padding">
-    <div class="container">
-        <h2 class="text-center section-title">Experience</h2>
-
-        <div class="mb-4">
-            <h5 class="fw-bold">Deputy Manager / Tech Lead</h5>
-            <p class="text-muted">Renault & Nissan Technology Business Center India | 2015 – Present</p>
-            <ul>
-                <li>Leading 3 concurrent enterprise projects.</li>
-                <li>Managing and mentoring 25+ team members.</li>
-                <li>Improved application performance by 60%.</li>
-                <li>Reduced delivery timelines by 9%.</li>
-                <li>Driving AWS cloud migration initiatives.</li>
-            </ul>
-        </div>
-
+    <!-- Core Competencies -->
+    <div class="card shadow-custom p-4 mb-4">
+        <h4 class="section-title">Core Competencies</h4>
         <div>
-            <h6 class="fw-bold">Previous Companies</h6>
-            <p>Seagate (Malaysia) | Cognizant | Dreamtekis Software Pvt. Ltd.</p>
+            <span class="badge bg-primary badge-skill">Software Architecture</span>
+            <span class="badge bg-primary badge-skill">System Integration</span>
+            <span class="badge bg-primary badge-skill">Project Management</span>
+            <span class="badge bg-primary badge-skill">Application Optimization</span>
+            <span class="badge bg-primary badge-skill">Agile & Scrum</span>
+            <span class="badge bg-primary badge-skill">Stakeholder Management</span>
+            <span class="badge bg-primary badge-skill">AWS Cloud Migration</span>
+            <span class="badge bg-primary badge-skill">Technical Mentorship</span>
+            <span class="badge bg-primary badge-skill">DevOps Practices</span>
         </div>
     </div>
-</section>
 
-<!-- Projects -->
-<section id="projects" class="bg-light section-padding">
-    <div class="container">
-        <h2 class="text-center section-title">Key Projects</h2>
-        <div class="row g-4">
-
-            <div class="col-md-4">
-                <div class="card project-card h-100 shadow-sm">
-                    <div class="card-body">
-                        <h5 class="card-title">ASK2</h5>
-                        <p class="card-text">Confidential document management system built using Spring Boot & PostgreSQL.</p>
-                    </div>
-                </div>
+    <!-- Technical Skills -->
+    <div class="card shadow-custom p-4 mb-4">
+        <h4 class="section-title">Technical Skills</h4>
+        <div class="row">
+            <div class="col-md-6">
+                <p><strong>Languages:</strong> Java 11/17, J2EE, PL-SQL, JavaScript</p>
+                <p><strong>Frameworks:</strong> Spring Boot, Spring MVC, Hibernate, Struts, AngularJS</p>
+                <p><strong>Web Technologies:</strong> HTML, JSP, Servlets, XML, JSON</p>
             </div>
-
-            <div class="col-md-4">
-                <div class="card project-card h-100 shadow-sm">
-                    <div class="card-body">
-                        <h5 class="card-title">A-SIS</h5>
-                        <p class="card-text">Alliance Specification Information System supporting 1PLM configurations.</p>
-                    </div>
-                </div>
+            <div class="col-md-6">
+                <p><strong>Databases:</strong> Oracle, SQL Server, PostgreSQL, MySQL</p>
+                <p><strong>Servers:</strong> Apache Tomcat, JBoss, WebLogic</p>
+                <p><strong>Tools:</strong> Eclipse, SVN, Jenkins, Jasper Reports</p>
             </div>
-
-            <div class="col-md-4">
-                <div class="card project-card h-100 shadow-sm">
-                    <div class="card-body">
-                        <h5 class="card-title">LOUISA</h5>
-                        <p class="card-text">Vehicle transportation system managing logistics from plant to dealers.</p>
-                    </div>
-                </div>
-            </div>
-
         </div>
     </div>
-</section>
 
-<!-- Contact -->
-<section id="contact" class="section-padding">
-    <div class="container text-center">
-        <h2 class="section-title">Contact Me</h2>
-        <p><i class="fa-solid fa-envelope"></i> oanish76@gmail.com</p>
-        <p><i class="fa-solid fa-phone"></i> +91 8310821922</p>
-        <p><i class="fa-solid fa-location-dot"></i> India</p>
+    <!-- Work Experience -->
+    <div class="card shadow-custom p-4 mb-4">
+        <h4 class="section-title">Work Experience</h4>
+
+        <h5 class="fw-bold">Deputy Manager / Tech Lead</h5>
+        <p class="text-muted">Renault & Nissan Technology Business Center India | Nov 2015 – Present</p>
+        <ul>
+            <li>Leading three concurrent projects with 25 team members.</li>
+            <li>Driving AWS migration initiatives and cloud optimization.</li>
+            <li>Improved application performance by 60%.</li>
+            <li>Reduced project delivery timelines by 9%.</li>
+            <li>Managing Agile ceremonies and stakeholder reporting.</li>
+        </ul>
+
+        <hr>
+
+        <h6 class="fw-bold">Previous Organizations</h6>
+        <ul>
+            <li>Seagate – IT SRC (Malaysia)</li>
+            <li>Cognizant Technology Solutions (India)</li>
+            <li>Dreamtekis Software Pvt. Ltd. (India)</li>
+        </ul>
     </div>
-</section>
 
-<footer class="text-center">
-    <div class="container">
-        <p>© 2026 Anish O | Portfolio Website</p>
+    <!-- Projects -->
+    <div class="card shadow-custom p-4 mb-4">
+        <h4 class="section-title">Key Projects</h4>
+        <ul>
+            <li><strong>ASK2:</strong> Confidential Document Maintenance System (Spring Boot, PostgreSQL)</li>
+            <li><strong>A-SIS:</strong> Alliance Specification Information System</li>
+            <li><strong>LOUISA:</strong> Finished Goods Transportation System</li>
+            <li><strong>proAPW:</strong> Vehicle Fabrication Support Application</li>
+            <li><strong>Package Weight Matrix:</strong> Logistics & Reporting Application</li>
+            <li><strong>Retail Search Engine:</strong> Walgreens E-commerce Search Platform</li>
+        </ul>
     </div>
-</footer>
 
+    <!-- Education -->
+    <div class="card shadow-custom p-4 mb-4">
+        <h4 class="section-title">Education</h4>
+        <ul>
+            <li>MCA – Periyar University (2002)</li>
+            <li>PGDCA – IHRD Kerala (1999)</li>
+            <li>B.Sc Mathematics – Calicut University (1997)</li>
+        </ul>
+    </div>
+
+    <!-- Footer -->
+    <div class="text-center text-muted mt-4">
+        <p>Languages: English, Tamil, Malayalam | Address: Coimbatore - 641035</p>
+    </div>
+
+</div>
+
+<!-- Bootstrap JS -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
 </html>
