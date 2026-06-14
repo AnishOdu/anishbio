@@ -1,300 +1,357 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Anish O | Tech Lead Portfolio</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Anish O | Executive Technology Portfolio</title>
 
-    <!-- Bootstrap 5 -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet">
 
-    <!-- FontAwesome -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
-
-    <style>
-        body {
-            scroll-behavior: smooth;
-        }
-        .hero {
-            background: linear-gradient(135deg, #0d6efd, #0a58ca);
-            color: white;
-            padding: 100px 0;
-        }
-        .section-padding {
-            padding: 70px 0;
-        }
-        .section-title {
-            margin-bottom: 40px;
-            font-weight: 700;
-        }
-        .skill-badge {
-            margin: 5px;
-        }
-        .project-card {
-            transition: transform 0.3s ease;
-        }
-        .project-card:hover {
-            transform: translateY(-5px);
-        }
-        footer {
-            background: #212529;
-            color: #ccc;
-            padding: 20px 0;
-        }
-    </style>
+<style>
+:root{
+    --navy:#0B1F3A;
+    --gold:#C8A45D;
+    --slate:#2D3748;
+    --light:#F4F6F9;
+    --white:#ffffff;
+}
+html{scroll-behavior:smooth;}
+body{
+    font-family:'Segoe UI',Tahoma,sans-serif;
+    color:var(--slate);
+    background:#fff;
+}
+.navbar{
+    background:rgba(11,31,58,.98)!important;
+    box-shadow:0 4px 20px rgba(0,0,0,.15);
+}
+.navbar-brand{
+    letter-spacing:1px;
+}
+.nav-link{
+    font-weight:500;
+}
+.dropdown-menu{
+    border:none;
+    border-radius:12px;
+    box-shadow:0 15px 35px rgba(0,0,0,.18);
+}
+.dropdown-item{
+    padding:10px 18px;
+    font-weight:500;
+}
+.hero{
+    background:
+    linear-gradient(rgba(11,31,58,.94),rgba(11,31,58,.94)),
+    radial-gradient(circle at top right,#1D4ED8,transparent 35%);
+    color:white;
+    padding:155px 0 110px;
+}
+.gold{color:var(--gold);}
+.btn-gold{
+    background:var(--gold);
+    color:white;
+    border:none;
+    padding:12px 28px;
+    font-weight:600;
+}
+.btn-gold:hover{
+    background:#b8944e;
+    color:white;
+}
+.section{
+    padding:85px 0;
+}
+.section-title{
+    text-transform:uppercase;
+    font-weight:800;
+    letter-spacing:2px;
+    margin-bottom:42px;
+    color:var(--navy);
+}
+.section-title:after{
+    content:'';
+    display:block;
+    width:80px;
+    height:4px;
+    background:var(--gold);
+    margin:14px auto 0;
+    border-radius:20px;
+}
+.executive-card{
+    background:white;
+    border:none;
+    border-radius:16px;
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+    padding:30px;
+    height:100%;
+    transition:.3s ease;
+}
+.executive-card:hover{
+    transform:translateY(-6px);
+}
+.metric{
+    font-size:2.5rem;
+    font-weight:800;
+    color:var(--navy);
+}
+.skill-badge{
+    display:inline-block;
+    padding:10px 16px;
+    margin:7px;
+    background:#EEF2F7;
+    border-left:4px solid var(--gold);
+    font-weight:600;
+    border-radius:5px;
+}
+.timeline-item{
+    border-left:4px solid var(--gold);
+    padding-left:25px;
+    margin-bottom:30px;
+}
+.icon-circle{
+    width:52px;
+    height:52px;
+    border-radius:50%;
+    background:#F7EEDB;
+    color:var(--gold);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:22px;
+    margin-bottom:16px;
+}
+footer{
+    background:var(--navy);
+    color:#D9E2EC;
+    padding:28px 0;
+}
+</style>
 </head>
+
 <body>
 
-<!-- Navbar -->
-<!-- Navbar -->
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-    <div class="container">
-        <a class="navbar-brand fw-bold" href="#">Anish O</a>
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+<div class="container">
+<a class="navbar-brand fw-bold" href="#">ANISH O</a>
 
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+<span class="navbar-toggler-icon"></span>
+</button>
 
-        <div class="collapse navbar-collapse" id="navMenu">
-            <ul class="navbar-nav ms-auto">
+<div class="collapse navbar-collapse" id="navMenu">
+<ul class="navbar-nav ms-auto">
 
-                <li class="nav-item">
-                    <a class="nav-link" href="#about">About</a>
-                </li>
+<li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+<li class="nav-item"><a class="nav-link" href="#skills">Competencies</a></li>
+<li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+<li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+<li class="nav-item"><a class="nav-link" href="#innovation">Innovation Lab</a></li>
 
-                <li class="nav-item">
-                    <a class="nav-link" href="#skills">Skills</a>
-                </li>
+<li class="nav-item dropdown">
+<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+<i class="fa-solid fa-toolbox me-1"></i> Digital Utilities
+</a>
+<ul class="dropdown-menu dropdown-menu-end">
+<li><a class="dropdown-item" href="https://anishodu.github.io/anishweather/" target="_blank"><i class="fa-solid fa-cloud-sun text-primary me-2"></i>Weather Dashboard</a></li>
+<li><a class="dropdown-item" href="https://anishodu.github.io/aniworldclock/" target="_blank"><i class="fa-solid fa-clock text-success me-2"></i>Global Time Zone</a></li>
+<li><a class="dropdown-item" href="https://anishodu.github.io/anicalendar/" target="_blank"><i class="fa-solid fa-calendar-days text-warning me-2"></i>Executive Calendar</a></li>
+<li><a class="dropdown-item" href="https://anishodu.github.io/logoutcalculator/" target="_blank"><i class="fa-solid fa-calculator text-danger me-2"></i>Logout Calculator</a></li>
+</ul>
+</li>
 
-                <li class="nav-item">
-                    <a class="nav-link" href="#experience">Experience</a>
-                </li>
+<li class="nav-item dropdown">
+<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+<i class="fa-solid fa-robot me-1"></i> AI Innovations
+</a>
+<ul class="dropdown-menu dropdown-menu-end">
+<li><a class="dropdown-item" href="https://anishodu.github.io/AniAgenticAi/carseacrh.html" target="_blank"><i class="fa-solid fa-car-side text-primary me-2"></i>AI Vehicle Advisor</a></li>
+<li><a class="dropdown-item" href="https://anishodu.github.io/aniweatherData/customWeather.html" target="_blank"><i class="fa-solid fa-cloud text-info me-2"></i>AI Weather Insights</a></li>
+</ul>
+</li>
 
-                <li class="nav-item">
-                    <a class="nav-link" href="#projects">Projects</a>
-                </li>
+<li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
 
-                <li class="nav-item">
-                    <a class="nav-link" href="#contact">Contact</a>
-                </li>
-
-                <!-- Tools Dropdown -->
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="toolsDropdown"
-                       role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        <i class="fa-solid fa-screwdriver-wrench me-1"></i> Tools
-                    </a>
-
-                    <ul class="dropdown-menu dropdown-menu-end shadow"
-                        aria-labelledby="toolsDropdown">
-
-                        <li>
-                            <a class="dropdown-item" 
-                               href="https://anishodu.github.io/anishweather/" 
-                               target="_blank">
-                                <i class="fa-solid fa-cloud-sun me-2 text-primary"></i>
-                                Know Weather
-                            </a>
-                        </li>
-
-                        <li>
-                            <a class="dropdown-item" 
-                               href="https://anishodu.github.io/aniworldclock/" 
-                               target="_blank">
-                                <i class="fa-solid fa-clock me-2 text-success"></i>
-                                Time Zone
-                            </a>
-                        </li>
-
-                        <li>
-                            <a class="dropdown-item" 
-                               href="https://anishodu.github.io/anicalendar/" 
-                               target="_blank">
-                                <i class="fa-solid fa-calendar-days me-2 text-warning"></i>
-                                My Calendar
-                            </a>
-                        </li>
-
-                        <li>
-                            <a class="dropdown-item" 
-                               href="https://anishodu.github.io/logoutcalculator/" 
-                               target="_blank">
-                                <i class="fa-solid fa-calculator me-2 text-danger"></i>
-                                Log Out Calculator
-                            </a>
-                        </li>
-
-                    </ul>
-                </li>
-                
-<!-- AI  Dropdown -->
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="toolsDropdown"
-                       role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        <i class="fa-solid fa-gears"></i> Agentic AI
-                    </a>
-
-                    <ul class="dropdown-menu dropdown-menu-end shadow"
-                        aria-labelledby="toolsDropdown">
-
-                        <li>
-                            <a class="dropdown-item" 
-                               href="https://anishodu.github.io/AniAgenticAi/carseacrh.html" 
-                               target="_blank">
-                                <i class="fa-solid fa-cloud-sun me-2 text-primary"></i>
-                                Car Search
-                            </a>
-                        </li>
-
-                         <li>
-                            <a class="dropdown-item" 
-                               href="https://anishodu.github.io/aniweatherData/customWeather.html" 
-                               target="_blank">
-                                <i class="fa-solid fa-cloud-sun me-2 text-primary"></i>
-                                Custom Weather
-                            </a>
-                        </li>
-                      
-
-                        
-                       
-
-                    </ul>
-                </li>
-               
-
-            </ul>
-        </div>
-    </div>
+</ul>
+</div>
+</div>
 </nav>
 
-<!-- Hero Section -->
-<section class="hero text-center">
-    <div class="container">
-        <h1 class="display-4 fw-bold">Deputy Manager | Tech Lead</h1>
-        <p class="lead">19+ Years of Experience in Enterprise Application Development & Cloud Solutions</p>
-        <a href="#contact" class="btn btn-light btn-lg mt-3">Get In Touch</a>
-    </div>
+<section class="hero">
+<div class="container">
+<div class="row align-items-center">
+<div class="col-lg-8">
+<p class="gold fw-bold mb-2">DEPUTY MANAGER • TECHNOLOGY LEADER • ENTERPRISE DELIVERY</p>
+<h1 class="display-3 fw-bold">Driving Enterprise Transformation Through Technology Excellence</h1>
+<p class="lead mt-4">
+19+ years of experience in enterprise application development, cloud transformation,
+engineering leadership, Agile delivery and strategic technology execution.
+</p>
+<a href="#contact" class="btn btn-gold btn-lg mt-3">Connect With Me</a>
+</div>
+<div class="col-lg-4 mt-5 mt-lg-0">
+<div class="executive-card text-center">
+<h3 class="metric">19+</h3>
+<p>Years of Experience</p>
+<hr>
+<h3 class="metric">25+</h3>
+<p>Engineers Led</p>
+<hr>
+<h5 class="fw-bold">Enterprise Scale Delivery</h5>
+<p class="mb-0">Java • Cloud • Agile • DevOps</p>
+</div>
+</div>
+</div>
+</div>
 </section>
 
-<!-- About -->
-<section id="about" class="section-padding">
-    <div class="container">
-        <h2 class="text-center section-title">About Me</h2>
-        <p class="text-center col-md-10 mx-auto">
-            Highly experienced and results-driven software professional specializing in Java/J2EE technologies,
-            Spring Boot, AWS cloud migration, Agile project leadership, and enterprise architecture.
-            Currently leading 25+ engineers at Renault & Nissan Technology Business Center India,
-            delivering scalable and high-performance applications.
-        </p>
-    </div>
+<section class="section bg-light">
+<div class="container">
+<div class="row text-center g-4">
+<div class="col-md-3"><div class="executive-card"><div class="metric">19+</div><p>Years Experience</p></div></div>
+<div class="col-md-3"><div class="executive-card"><div class="metric">25+</div><p>Engineers Managed</p></div></div>
+<div class="col-md-3"><div class="executive-card"><div class="metric">10+</div><p>Enterprise Platforms</p></div></div>
+<div class="col-md-3"><div class="executive-card"><div class="metric">360°</div><p>Delivery Ownership</p></div></div>
+</div>
+</div>
 </section>
 
-<!-- Skills -->
-<section id="skills" class="bg-light section-padding">
-    <div class="container">
-        <h2 class="text-center section-title">Technical Skills</h2>
-        <div class="text-center">
-            <span class="badge bg-primary skill-badge">Java 11/17</span>
-            <span class="badge bg-primary skill-badge">Spring Boot</span>
-            <span class="badge bg-primary skill-badge">Hibernate</span>
-            <span class="badge bg-primary skill-badge">AngularJS</span>
-            <span class="badge bg-primary skill-badge">AWS</span>
-            <span class="badge bg-primary skill-badge">Oracle</span>
-            <span class="badge bg-primary skill-badge">PostgreSQL</span>
-            <span class="badge bg-primary skill-badge">JBoss</span>
-            <span class="badge bg-primary skill-badge">Agile & Scrum</span>
-            <span class="badge bg-primary skill-badge">DevOps</span>
-        </div>
-    </div>
+<section id="about" class="section">
+<div class="container">
+<h2 class="section-title text-center">Executive Profile</h2>
+<div class="row">
+<div class="col-lg-10 mx-auto text-center">
+<p class="fs-5">
+Results-oriented technology leader with deep expertise in Java enterprise systems, cloud migration,
+digital modernization, stakeholder management and high-performing engineering teams. Experienced in
+leading business-critical applications and delivering scalable technology solutions for global enterprise needs.
+</p>
+</div>
+</div>
+</div>
 </section>
 
-<!-- Experience -->
-<section id="experience" class="section-padding">
-    <div class="container">
-        <h2 class="text-center section-title">Experience</h2>
-
-        <div class="mb-4">
-            <h5 class="fw-bold">Deputy Manager / Tech Lead</h5>
-            <p class="text-muted">Renault & Nissan Technology Business Center India | 2015 – Present</p>
-            <ul>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-            </ul>
-        </div>
-
-        <div>
-            <h6 class="fw-bold">Previous Companies</h6>
-            <p>Seagate (Malaysia) | Cognizant | Dreamtekis Software Pvt. Ltd.</p>
-        </div>
-    </div>
+<section id="skills" class="section bg-light">
+<div class="container text-center">
+<h2 class="section-title">Core Competencies</h2>
+<span class="skill-badge">Technology Leadership</span>
+<span class="skill-badge">Enterprise Architecture</span>
+<span class="skill-badge">Java 11/17</span>
+<span class="skill-badge">Spring Boot</span>
+<span class="skill-badge">AWS Cloud</span>
+<span class="skill-badge">Microservices</span>
+<span class="skill-badge">Agile Delivery</span>
+<span class="skill-badge">DevOps Governance</span>
+<span class="skill-badge">Stakeholder Management</span>
+<span class="skill-badge">People Leadership</span>
+<span class="skill-badge">Digital Transformation</span>
+<span class="skill-badge">Database Platforms</span>
+</div>
 </section>
 
-<!-- Projects -->
-<section id="projects" class="bg-light section-padding">
-    <div class="container">
-        <h2 class="text-center section-title">Key Projects</h2>
-        <div class="row g-4">
+<section id="experience" class="section">
+<div class="container">
+<h2 class="section-title text-center">Professional Experience</h2>
 
-            <div class="col-md-4">
-                <div class="card project-card h-100 shadow-sm">
-                    <div class="card-body">
-                        <h5 class="card-title">ASK2</h5>
-                        <p class="card-text">Confidential document management system built using Spring Boot & PostgreSQL.</p>
-                    </div>
-                </div>
-            </div>
+<div class="timeline-item">
+<h4 class="fw-bold">Deputy Manager / Tech Lead</h4>
+<p class="text-muted">Renault Nissan Technology & Business Center India | 2015 – Present</p>
+<ul>
+<li>Leading enterprise application portfolios and modernization initiatives.</li>
+<li>Managing cross-functional engineering teams across delivery, quality and support.</li>
+<li>Driving cloud transformation, Agile execution and DevOps adoption.</li>
+<li>Enabling scalable, secure and maintainable enterprise technology platforms.</li>
+</ul>
+</div>
 
-            <div class="col-md-4">
-                <div class="card project-card h-100 shadow-sm">
-                    <div class="card-body">
-                        <h5 class="card-title">A-SIS</h5>
-                        <p class="card-text">Alliance Specification Information System supporting 1PLM configurations.</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-4">
-                <div class="card project-card h-100 shadow-sm">
-                    <div class="card-body">
-                        <h5 class="card-title">LOUISA</h5>
-                        <p class="card-text">Vehicle transportation system managing logistics from plant to dealers.</p>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-    </div>
+<div class="timeline-item">
+<h5 class="fw-bold">Previous Organizations</h5>
+<p>Seagate Malaysia • Cognizant • Dreamtekis Software Pvt. Ltd.</p>
+</div>
+</div>
 </section>
 
-<!-- Contact -->
-<section id="contact" class="section-padding">
-    <div class="container text-center">
-        <h2 class="section-title">Contact Me</h2>
-        <p><i class="fa-solid fa-envelope"></i> oanish76@gmail.com</p>
-        <p><i class="fa-solid fa-phone"></i> +91 8310821922</p>
-        <p><i class="fa-solid fa-location-dot"></i> India</p>
-    </div>
+<section id="projects" class="section bg-light">
+<div class="container">
+<h2 class="section-title text-center">Strategic Projects</h2>
+<div class="row g-4">
+<div class="col-md-4">
+<div class="executive-card">
+<div class="icon-circle"><i class="fa-solid fa-file-shield"></i></div>
+<h5>ASK2</h5>
+<p>Enterprise document management and governance platform using modern Java architecture.</p>
+</div>
+</div>
+<div class="col-md-4">
+<div class="executive-card">
+<div class="icon-circle"><i class="fa-solid fa-diagram-project"></i></div>
+<h5>A-SIS</h5>
+<p>Alliance specification information system supporting engineering and PLM workflows.</p>
+</div>
+</div>
+<div class="col-md-4">
+<div class="executive-card">
+<div class="icon-circle"><i class="fa-solid fa-truck-fast"></i></div>
+<h5>LOUISA</h5>
+<p>Vehicle transportation and logistics management solution from plant to dealer network.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<section id="innovation" class="section">
+<div class="container">
+<h2 class="section-title text-center">Innovation Lab</h2>
+<div class="row g-4">
+
+<div class="col-md-4">
+<div class="executive-card">
+<div class="icon-circle"><i class="fa-solid fa-car-side"></i></div>
+<h5>AI Vehicle Advisor</h5>
+<p>Agentic AI-based vehicle discovery and recommendation solution.</p>
+<a href="https://anishodu.github.io/AniAgenticAi/carseacrh.html" target="_blank" class="btn btn-sm btn-outline-primary">Launch</a>
+</div>
+</div>
+
+<div class="col-md-4">
+<div class="executive-card">
+<div class="icon-circle"><i class="fa-solid fa-cloud"></i></div>
+<h5>AI Weather Insights</h5>
+<p>Custom weather intelligence dashboard with AI-powered insights.</p>
+<a href="https://anishodu.github.io/aniweatherData/customWeather.html" target="_blank" class="btn btn-sm btn-outline-primary">Launch</a>
+</div>
+</div>
+
+<div class="col-md-4">
+<div class="executive-card">
+<div class="icon-circle"><i class="fa-solid fa-globe"></i></div>
+<h5>Global Time Zone</h5>
+<p>Utility to manage time coordination across distributed teams.</p>
+<a href="https://anishodu.github.io/aniworldclock/" target="_blank" class="btn btn-sm btn-outline-primary">Launch</a>
+</div>
+</div>
+
+</div>
+</div>
+</section>
+
+<section id="contact" class="section bg-light">
+<div class="container text-center">
+<h2 class="section-title">Executive Contact</h2>
+<p><i class="fa-solid fa-envelope gold me-2"></i> oanish76@gmail.com</p>
+<p><i class="fa-solid fa-phone"></i> +91 8310821922</p>
+<p><i class="fa-solid fa-location-dot gold me-2"></i> India</p>
+</div>
 </section>
 
 <footer class="text-center">
-    <div class="container">
-        <p>© 2026 Anish O | Portfolio Website</p>
-    </div>
+<div class="container">
+<p class="mb-0">© 2026 Anish O | Executive Technology Leadership Portfolio</p>
+</div>
 </footer>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-
-
-    
-
-
-    
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
-
-
-
