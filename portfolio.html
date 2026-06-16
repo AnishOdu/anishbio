@@ -350,7 +350,19 @@ leading business-critical applications and delivering scalable technology soluti
 <script type="module">
 import { createChat } from 'https://cdn.jsdelivr.net/npm/@n8n/chat/dist/chat.bundle.es.js';
  createChat({
- webhookUrl: 'https://n8n.srv1389046.hstgr.cloud/webhook/821797b2-5491-4af4-add9-ab0f716b3b79/chat'
+ webhookUrl: 'https://n8n.srv1389046.hstgr.cloud/webhook/821797b2-5491-4af4-add9-ab0f716b3b79/chat',
+
+ initialMessages: [
+    'Hi there! 👋',
+    'My name is Anish. How can I assist you today?'
+  ],
+  i18n: {
+    en: {
+      title: 'Hi there! 👋',
+      subtitle: "Start a chat. We're here to help you 24/7.",
+    }
+  }
+   
 });
 </script>
 
